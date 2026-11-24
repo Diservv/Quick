@@ -134,4 +134,5 @@ server.listen(PORT, () => {
   console.error(err);
   console.error(err?.stack);
   process.exit(1);
+  });
 });
