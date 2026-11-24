@@ -126,13 +126,15 @@ const PORT = process.env.PORT || 3000;
 
 server.listen(PORT, () => {
   logger.info(`Server is running on port ${PORT}`);
-  connectDB().then(async () => {
-    await pluginLoader.loadPlugins();
-    await baileyService.init();
-  }).catch((err) => {
-  console.error('Startup initialization failed');
-  console.error(err);
-  console.error(err?.stack);
-  process.exit(1);
-  });
+
+  connectDB()
+    .then(async () => {
+      await pluginLoader.loadPlugins();
+      await baileyService.init();
+    })
+    .catch((err) => {
+      console.error('Startup initialization failed:', err);
+      console.error(err?.stack);
+      process.exit(1);
+    });
 });
