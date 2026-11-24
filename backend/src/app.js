@@ -130,7 +130,8 @@ server.listen(PORT, () => {
     await pluginLoader.loadPlugins();
     await baileyService.init();
   }).catch((err) => {
-    logger.error('Startup initialization failed:', err);
-    process.exit(1);
-  });
+  console.error('Startup initialization failed');
+  console.error(err);
+  console.error(err?.stack);
+  process.exit(1);
 });
