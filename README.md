@@ -1,13 +1,8 @@
-# WAAI Flow
+# quick-chat
 
 Open-source WhatsApp AI automation platform — visual flow builder, AI agents, multi-session management, broadcasts, webhooks, and real-time analytics.
 
-**Maintainer:** ZQ Developers &nbsp;|&nbsp; **Support:** +923334916432
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/zqdevelopers/waai-flow?style=social)](https://github.com/zqdevelopers/waai-flow/stargazers)
-[![Issues](https://img.shields.io/github/issues/zqdevelopers/waai-flow)](https://github.com/zqdevelopers/waai-flow/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 ---
 
@@ -133,10 +128,6 @@ cd backend && npx prisma db push && cd ..
 npm run dev
 ```
 
-- Frontend: `http://localhost:5173`
-- Backend API: `http://localhost:3000`
-
-Login: `admin` / `your-strong-password`
 
 ---
 

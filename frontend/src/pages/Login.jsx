@@ -7,7 +7,7 @@ const Login = () => {
   const auth = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  const [form, setForm] = useState({ username: 'admin', password: '' });
+  const [form, setForm] = useState({ username: '', password: '' });
   const [error, setError] = useState('');
   const from = location.state?.from || '/';
 
@@ -32,7 +32,7 @@ const Login = () => {
             <BotMessageSquare className="text-primary" size={22} />
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-white">WAAI Flow</h1>
+            <h1 className="text-2xl font-bold text-white">Quick agent</h1>
             <p className="text-sm text-slate-400">Sign in to manage automation features.</p>
           </div>
         </div>
@@ -44,6 +44,7 @@ const Login = () => {
               value={form.username}
               onChange={(e) => setForm({ ...form, username: e.target.value })}
               className="mt-2 w-full bg-background border border-border text-slate-200 rounded-lg p-2.5 outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50"
+              placeholder="user"
             />
           </label>
           <label className="block">
@@ -53,7 +54,7 @@ const Login = () => {
               value={form.password}
               onChange={(e) => setForm({ ...form, password: e.target.value })}
               className="mt-2 w-full bg-background border border-border text-slate-200 rounded-lg p-2.5 outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50"
-              placeholder="Default: admin123"
+              placeholder="password"
             />
           </label>
           {error && <div className="text-sm text-danger bg-danger-bg border border-danger/20 rounded-lg p-3">{error}</div>}
@@ -63,12 +64,12 @@ const Login = () => {
         </form>
 
         <p className="text-xs text-slate-500 mt-5">
-          Set `ADMIN_USERNAME`, `ADMIN_PASSWORD`, and `AUTH_SECRET` in `backend/.env` for production.
+         
         </p>
         <div className="mt-4 pt-4 border-t border-border text-xs text-slate-500">
-          Open source by <span className="text-slate-300 font-medium">ZQ Developers</span>
-          <span className="mx-2">/</span>
-          WhatsApp support: <span className="text-slate-300 font-medium">+923144916432</span>
+              Privacy policy | Terms of service
+          <span className="mx-2">|</span>
+          WhatsApp support: <span className="text-slate-300 font-medium">+258 83 488 4185</span>
         </div>
       </div>
     </div>

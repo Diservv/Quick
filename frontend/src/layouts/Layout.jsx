@@ -45,7 +45,7 @@ const Sidebar = () => {
           <div className="bg-primary p-1.5 rounded-lg shadow-lg shadow-primary/20">
             <BotMessageSquare size={20} className="text-white" />
           </div>
-          <span className="text-lg font-bold text-white tracking-wide">WAAI Flow</span>
+          <span className="text-lg font-bold text-white tracking-wide">Quick Chat</span>
         </div>
         <button className="ml-auto text-slate-400 hover:text-white">
           <Menu size={18} />
@@ -85,8 +85,8 @@ const Sidebar = () => {
           <div className="flex items-center space-x-3">
             <div className="w-2.5 h-2.5 rounded-full bg-success ring-4 ring-success/20 animate-pulse"></div>
           <div>
-              <div className="text-xs font-semibold text-white">ZQ Developers</div>
-              <div className="text-[10px] text-slate-400 mt-0.5">Support: +923144916432</div>
+              <div className="text-xs font-semibold text-white">Quick Chat</div>
+              <div className="text-[10px] text-slate-400 mt-0.5">Support: +258 83 488 4185</div>
             </div>
           </div>
         </div>

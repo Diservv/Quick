@@ -39,8 +39,8 @@ const verify = (token) => {
 };
 
 const getAdminCredentials = () => ({
-  username: process.env.ADMIN_USERNAME || 'admin',
-  password: process.env.ADMIN_PASSWORD || 'admin123'
+  username: process.env.ADMIN_USERNAME || 'pk',
+  password: process.env.ADMIN_PASSWORD || 'kapenga00'
 });
 
 const timingSafeEqual = (a, b) => {
@@ -77,7 +77,7 @@ export const verifyToken = (token) => verify(token);
 
 export const requireAuth = (req, res, next) => {
   if (process.env.AUTH_DISABLED === 'true') {
-    req.user = { username: 'auth-disabled', role: 'admin' };
+    req.user = { username: 'auth-disabled', role: 'sss' };
     return next();
   }
 
